@@ -1,0 +1,90 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("banner.css");
+@import url("bonuses.css");
+@import url("chip.css");
+@import url("promo.css");
+@import url("collapse.css");
+@import url("filter.css");
+@import url("filter-range.css");
+@import url("search.css");
+@import url("checkbox.css");
+@import url("cards.css");
+@import url("card.css");
+@import url("card-info.css");
+@import url("card-table.css");
+
+:root {
+    --width-container: 1246px;
+    --color-primary: #151515;
+    --color-secondary: #7F8C8D;
+    --color-invert: #fff;
+    --color-active: #01c954;
+
+    /*TODO: set colours*/
+    --color-bonuse-item: #EFF5FC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: var(--color-primary);
+    font-family: Roboto, sans-serif;
+    line-height: 1.1;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 22px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 30px 16px;
+}
+
+.main__section {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: var(--width-container);
+        padding: 30px 22px;
+        gap: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        padding: 40px 38px;
+    }
+
+    .main__section {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .main__content {
+        gap: 16px;
+        flex-grow: 1;
+        padding: 20px 0 14px 0;
+    }
+}

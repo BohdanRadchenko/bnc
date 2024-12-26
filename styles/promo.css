@@ -1,0 +1,12 @@
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 6px;
+    background-color: #EFF5FC;
+    max-width: 184px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: capitalize;
+}

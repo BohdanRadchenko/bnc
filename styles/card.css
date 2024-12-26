@@ -1,0 +1,127 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 10px 40px 0 #6D8DAD66;
+    padding: 12px;
+    gap: 24px;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card__wrapper details {
+    display: none;
+}
+
+.card__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.card__image {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image img {
+    object-fit: fill;
+    width: auto;
+    max-width: 50px;
+    aspect-ratio: 1;/1
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+}
+
+.card__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card__subtitle {
+    font-size: 12px;
+}
+
+.card__title {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.card__description {
+    font-size: 12px;
+    color: var(--color-secondary);
+}
+
+.card__action {
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.card__action button {
+    display: inline-flex;
+    padding: 10px 30px;
+    border-radius: 200px;
+    background: var(--color-active);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-wrap: nowrap;
+}
+
+.card__action a {
+    color: var(--color-secondary);
+    font-size: 12px;
+    text-decoration: underline;
+    align-self: center;
+}
+
+.card__more {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 20px 24px 12px;
+        gap: 24px;
+    }
+
+    .card details {
+        display: none;
+    }
+
+    .card__wrapper details {
+        display: flex;
+    }
+
+    .card__content {
+        flex-direction: row;
+    }
+
+    .card__image img {
+        max-width: 80px;
+    }
+}

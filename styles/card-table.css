@@ -1,0 +1,43 @@
+.card__table {
+    width: 100%;
+    overflow-x: auto;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.table__title {
+    padding: 10px;
+    font-weight: 700;
+    width: 100%;
+    background: #E1EFFC;
+}
+
+.card__table .table__title:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+.card__table table {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    background-color: transparent;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+}
+
+.card__table thead {
+    text-align: left;
+    font-weight: 700;
+}
+
+.card__table tr {
+    background-color: #EFF5FC;
+}
+
+.card__table th,
+.card__table td {
+    padding: 12px;
+}

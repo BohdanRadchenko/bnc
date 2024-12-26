@@ -1,0 +1,38 @@
+details {
+    display: flex;
+    flex-direction: column;
+}
+
+details.d-up {
+    flex-direction: column-reverse;
+}
+
+details.d-center {
+    justify-content: center;
+}
+
+
+details.d-center summary {
+    align-self: center;
+}
+
+summary {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    width: fit-content;
+    gap: 8px;
+}
+
+summary::after {
+    content: '▲';
+}
+
+details[open] summary::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+details:not(:last-of-type) {
+    border-bottom: 1px solid rgba(127, 140, 141, 0.2);
+}

@@ -1,0 +1,13 @@
+.search {
+    width: 100%;
+    min-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 6px;
+    border: 1px solid rgba(127, 140, 141, 0.2);
+    border-radius: 10px;
+    background: #EFF5FC;
+
+}

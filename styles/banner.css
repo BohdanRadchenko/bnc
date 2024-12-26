@@ -1,0 +1,46 @@
+.banner {
+    background-color: #e2e8ec;
+}
+
+.banner__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 26px 12px;
+    max-width: var(--width-container);
+    margin: 0 auto;
+}
+
+.banner__title {
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.banner__breadcrumb {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.banner__breadcrumb span {
+    color: #6c757d;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__container {
+        padding: 38px 22px;
+        min-height: 200px;
+    }
+
+    .banner__title {
+        font-size: 48px;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__container {
+        padding: 38px;
+    }
+}

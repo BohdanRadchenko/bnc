@@ -1,0 +1,116 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filter section {
+    display: none;
+}
+
+.filter__ranges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(109, 141, 173, 0.4);
+    border-radius: 14px;
+    padding: 20px;
+    min-height: 60px;
+    width: 100%;
+}
+
+.filter__title {
+    display: flex;
+    gap: 6px;
+}
+
+.filter__title p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.filter__clear {
+    display: none;
+    background-color: transparent;
+    color: var(--color-secondary);
+    font-size: 12px;
+}
+
+/*COLLAPSE CHECKBOX*/
+.filter details {
+    padding-top: 20px;
+    display: none;
+}
+
+.filter summary {
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.filter details:not(:last-of-type) {
+    border-bottom: 1px solid rgba(127, 140, 141, 0.2);
+}
+
+.filter .checkbox__title {
+    font-weight: 700;
+}
+
+.filter .checkbox__list {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter .checkbox__list:last-of-type {
+    padding: 10px 0 20px 0;
+}
+
+.filter .checkbox__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*MEDIA*/
+@media screen and (min-width: 1024px) {
+    .filter {
+        max-width: 220px;
+    }
+
+    .filter__head {
+        min-height: auto;
+        padding: 30px 0 20px 0;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(127, 140, 141, 0.2);
+    }
+
+    .filter__collapse {
+        display: none;
+    }
+
+    .filter__clear {
+        display: flex;
+    }
+
+    .filter details {
+        display: flex;
+    }
+
+    .filter section {
+        display: block;
+    }
+}

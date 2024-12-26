@@ -1,0 +1,48 @@
+.chip__wrapper {
+    display: flex;
+    gap: 6px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.chip {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    flex-shrink: 0;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #FFFFFF80;
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.chip--blue {
+    background-color: #347DEA;
+}
+
+.chip--red {
+    background-color: #FF2B27;
+}
+
+.chip--green {
+    background-color: #04BB4A;
+}
+
+.chip--purple {
+    background-color: #8653EB;
+}
+
+.chip--yellow {
+    background-color: #FF9A27;
+}
+
+/*TODO: remove next code */
+@media screen and (max-width: 767px) {
+    .chip__wrapper .chip:nth-child(2n) {
+        display: none;
+    }
+}
